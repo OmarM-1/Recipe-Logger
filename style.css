@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  
+  .sidebar {
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1.5rem;
+    overflow-y: auto;
+    backdrop-filter: blur(10px);
+  }
+  
+  .sidebar h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 0.5rem;
+  }
+  
+  .sidebar ul li {
+    padding: 12px;
+    margin-bottom: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .recipe-actions {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 4px 8px;
+    display: flex;
+    gap: 6px;
+    transition: background 0.2s;
+  }
+  
+  .recipe-actions:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .recipe-actions button {
+    background: transparent;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.2s, color 0.2s;
+    padding: 4px;
+    border-radius: 4px;
+  }
+  
+  .recipe-actions button:hover {
+    color: #ff8c42;
+    transform: scale(1.1);
+  }
+  
+  .content {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+  }
+  
+  .recipe-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .recipe-card h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-group {
+    margin-bottom: 1rem;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    resize: vertical;
+    min-height: 40px;
+  }
+  
+  .input-group textarea {
+    min-height: 80px;
+  }
+  
+  button {
+    padding: 12px 20px;
+    border: none;
+    background: #ff8c42;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #e6722d;
+  }
+  
+  .login-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, #2b5876, #4e4376);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+  }
+  
+  .login-box input {
+    padding: 12px;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .login-box button {
+    padding: 10px 20px;
+    border: none;
+    background: #ff8c42;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  #logout-btn {
+    margin-bottom: 1rem;
+    width: 100%;
+    background: #cc0000;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #logout-btn:hover {
+    background: #a80000;
+  }
+  
+  .fancy-title {
+    background: linear-gradient(to right, #e4def8, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Lucida Handwriting", cursive;
+    font-weight: 100;
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.7);
+  }

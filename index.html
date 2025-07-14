@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrador De Licha</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- LOGIN PAGE -->
+    <div class="login-container" id="login-container">
+      <div class="login-box">
+        <h1 class="page-title fancy-title">Licha's Delicias</span></h1>
+
+        <h1>Bienvenidos a las recetas de Licha</h1>
+        <input type="text" id="username" placeholder="Nombre de usuario..." />
+        <button onclick="login()">Iniciar sesión</button>
+      </div>
+    </div>
+
+    <!-- MAIN APP -->
+    <div class="container" id="app-container" style="display: none;">
+      <aside class="sidebar">
+        <h2>Mis Recetas</h2>
+        <button id="logout-btn" onclick="logout()">🔒 Cerrar sesión</button>
+        <ul id="recipe-list"></ul>
+      </aside>
+
+      <main class="content">
+        <div class="recipe-card">
+          <h1 class="page-title fancy-title">Delicias de Licha</span></h1>
+          <h1>Añadir una nueva receta</h1>
+          <div class="input-group">
+            <input type="text" id="recipe-name" placeholder="Nombre de Receta" />
+          </div>
+          <div class="input-group">
+            <textarea id="recipe-ingredients" placeholder="Ingredientes..."></textarea>
+          </div>
+          <div class="input-group">
+            <textarea id="recipe-instructions" placeholder="Instrucciones..."></textarea>
+          </div>
+          <button onclick="addRecipe()">Add Recipe</button>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
